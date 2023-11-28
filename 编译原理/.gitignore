@@ -1,0 +1,5 @@
+*.doc
+*.dev
+/.vscode
+*.exe
+*.json
