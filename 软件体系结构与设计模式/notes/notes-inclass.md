@@ -8,3 +8,15 @@
 
 软件分层架构是什么样的？
 
+# MVC架构
+
+`Model–View–Controller Architecture`
+
+包含三层：
+
+1. 视图（V）收集、展示数据、捕获和响应用户的操作
+2. 控制器（C）主要负责请求的处理、校验和转发
+3. 模型（M）数据和业务逻辑真正的集散地
+
+MVC架构和分层架构是很不相同的，MVC中的controller、model，而分层架构中使用的是logic层、dao层
+
