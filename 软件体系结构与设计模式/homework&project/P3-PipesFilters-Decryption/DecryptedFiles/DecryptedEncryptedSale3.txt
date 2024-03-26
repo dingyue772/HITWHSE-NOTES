@@ -1,0 +1,56 @@
+Printer $7744 Germany 23-46-45
+Refrigerator $7244 Republic of China 39-56-55
+Printer $7044 Germany 22-56-45
+Refrigerator $7744 Germany 23-46-45
+Refrigerator $7744 Germany 23-46-45
+Printer $7244 Japan 5339-56-55
+Refrigerator $7044 Germany 22-56-45
+Computer $1644 Republic of China 39-56-55
+Refrigerator $7244 Japan 39-56-55
+Computer $0244 Republic of China 21-56-55
+Washing Machine $7244 Republic of China 39-56-55
+TV $57744 Germany 12-46-45
+TV $2044 Germany 13-56-45
+Washing Machine $7244 Japan 01-56-55
+Printer $7744 Germany 23-46-45
+Refrigerator $7244 Republic of China 39-56-55
+Printer $7044 Germany 22-56-45
+Refrigerator $7744 Germany 23-46-45
+Refrigerator $7744 Germany 23-46-45
+Printer $7244 Japan 5339-56-55
+Refrigerator $7044 Germany 22-56-45
+Computer $1644 Republic of China 39-56-55
+Refrigerator $7244 Japan 39-56-55
+Computer $0244 Republic of China 21-56-55
+Washing Machine $7244 Republic of China 39-56-55
+TV $57744 Germany 12-46-45
+TV $2044 Germany 13-56-45
+Washing Machine $7244 Japan 01-56-55
+Printer $7744 Germany 23-46-45
+Refrigerator $7244 Republic of China 39-56-55
+Printer $7044 Germany 22-56-45
+Refrigerator $7744 Germany 23-46-45
+Refrigerator $7744 Germany 23-46-45
+Printer $7244 Japan 5339-56-55
+Refrigerator $7044 Germany 22-56-45
+Computer $1644 Republic of China 39-56-55
+Refrigerator $7244 Japan 39-56-55
+Computer $0244 Republic of China 21-56-55
+Washing Machine $7244 Republic of China 39-56-55
+TV $57744 Germany 12-46-45
+TV $2044 Germany 13-56-45
+Washing Machine $7244 Japan 01-56-55
+Printer $7744 Germany 23-46-45
+Refrigerator $7244 Republic of China 39-56-55
+Printer $7044 Germany 22-56-45
+Refrigerator $7744 Germany 23-46-45
+Refrigerator $7744 Germany 23-46-45
+Printer $7244 Japan 5339-56-55
+Refrigerator $7044 Germany 22-56-45
+Computer $1644 Republic of China 39-56-55
+Refrigerator $7244 Japan 39-56-55
+Computer $0244 Republic of China 21-56-55
+Washing Machine $7244 Republic of China 39-56-55
+TV $57744 Germany 12-46-45
+TV $2044 Germany 13-56-45
+Washing Machine $7244 Japan 01-56-55

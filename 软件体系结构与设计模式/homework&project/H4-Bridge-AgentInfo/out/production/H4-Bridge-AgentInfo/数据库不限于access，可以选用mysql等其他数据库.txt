@@ -1,0 +1,18 @@
+inputs:
+abcde
+vwxyz
+abcde1234567
+
+Michael
+Sun
+wildfire1234
+
+
++log(lNm: String, fNm: String, cd: String)
+-writer: MessageWriter
++encryptName(name: String)
++encryptCode(code: String)
++log(lNm: String, fNm: String, cd: String)
+
++logMsg(lNm: String, fNm: String, cd: String)
+TxtFileWriter
