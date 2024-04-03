@@ -1,0 +1,7 @@
+1. 读取dim.bmp
+2. 在Calculate()函数中统计像素灰度值，归一化，输出一个256x256的直方图图像hist1.bmp
+2.1 将fpSrcBmp的头部信息(偏移量标识)三个部分全部读取出来GetBmpHeader()
+2.2 读取fpSrcBmp的文件头srcFileHeader、信息头srcInfoHeader修改头部信息 ChangeBmpHeader()
+2.3 将修改后的头部信息写入fpHist1Bmp对应的hist1.bmp中
+2.4 将原图的像素统计值转换为直方图的像素信息写入hist1.bmp getBmp()函数，四个参数
+2.5 在Calculate()函数中对统计好的像素点分布做均衡化，即计算概率分布，离散累计求和，写入bmp文件histchanged.bmp
