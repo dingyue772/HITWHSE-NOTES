@@ -1,6 +1,7 @@
+# 使用包
 import numpy as np
 
-
+# State类定义
 class State:
     def __init__(self, state, directionFlag=None, parent=None, f=0):
         self.state = state # 代表当前状态的八数码矩阵
@@ -95,8 +96,8 @@ class State:
             news.setF(news.getFunctionValue())
             subStates.append(news)
         # 返回F值最小的下一个点
-        subStates.sort(key=compareNum)
-        return subStates[0]
+        # subStates.sort(key=compareNum)
+        return subStates
 
     # A* 迭代
     def solve(self):
@@ -106,37 +107,50 @@ class State:
         closeTable = []
         openTable.append(self)
         while len(openTable) > 0:
+            # openTable打印
+            print("-------------------------openTable---------------------------")
+            for s in openTable:
+                print(s.state)
+            print("-------------------------------------------------------------")
+
+            # closeTable打印
+            # print("-------------------------closeTable---------------------------")
+            # for s in closeTable:
+            #     print(s.state)
+            # print("-------------------------------------------------------------")
             # 下一步的点移除open
             n = openTable.pop(0)
             # 加入close
             closeTable.append(n)
             # 确定下一步点
             subStates = n.nextStep()
+            openTable.extend(subStates)
+            openTable.sort(key=compareNum)
+            subState = openTable[0]
             path = []
             # 判断是否和最终结果相同
-            if (subStates.state == subStates.answer).all():
-                while subStates.parent and subStates.parent != originState:
-                    path.append(subStates.parent)
-                    subStates = subStates.parent
+            if (subState.state == subState.answer).all():
+                while subState.parent:
+                    path.append(subState.parent)
+                    subState = subState.parent
                 path.reverse()
                 return path
-            openTable.append(subStates)
         else:
             return None, None
-
+    def getOriginState(self):
+        originState.showInfo()
 
 def compareNum(state):
     return state.f
 
+originState = State(np.array([[2, 8, 3], [1, 6, 4], [7, 0, 5]]))
+State.answer = np.array([[1, 2, 3], [8, 0, 4], [7, 6, 5]]) # 用类变量保存八数码问题的目标状态
 
-if __name__ == '__main__':
-    originState = State(np.array([[2, 8, 3], [1, 6, 4], [7, 0, 5]]))
-    State.answer = np.array([[1, 2, 3], [8, 0, 4], [7, 6, 5]]) # 用类变量保存八数码问题的目标状态
+s1 = State(state=originState.state) 
+path = s1.solve()
 
-    s1 = State(state=originState.state) 
-    path = s1.solve()
-    if path:
-        for node in path:
-            node.showInfo()
-        print(State.answer)
-        print("Total steps is %d" % len(path))
+if path:
+    for node in path:
+        node.showInfo()
+    print(State.answer)
+    print("Total steps is %d" % len(path))
